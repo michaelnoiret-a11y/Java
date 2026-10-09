@@ -1,5 +1,5 @@
 class ShowUniqueValueBoard {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         int[] numbers = new int[6];
         numbers[0] = 17;
         numbers[1] = 21;

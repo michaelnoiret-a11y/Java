@@ -1,6 +1,7 @@
 import java.util.Array;
 
 class CountNumberBoard {
+    public static void main(String[] args) { 
 List<Integer> numbers = new ArrayList<>()
         MyBoard.add(3);
         MyBoard.add(7);
@@ -15,3 +16,4 @@ List<Integer> numbers = new ArrayList<>()
             int count = 0;
             count++;
     }
+}

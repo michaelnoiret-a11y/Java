@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 class BoardInt {
-    static void main(String[ args]) {
+    public static void main(String[ args]) {
         List<Integer> MyBoard = new ArrayList<>()
         MyBoard.add(12);
         MyBoard.add(6);
