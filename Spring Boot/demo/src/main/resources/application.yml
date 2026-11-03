@@ -1,0 +1,27 @@
+# greeting:
+#   message: "Bonjour depuis application.yml !"
+
+# Configuration générale
+spring:
+  profiles:
+    default: dev
+
+---
+# Profil DEV
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+greeting:
+  message: "Bonjour depuis l'environnement DEV !"
+
+---
+# Profil PROD
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+greeting:
+  message: "Bienvenue dans l'environnement PROD !"

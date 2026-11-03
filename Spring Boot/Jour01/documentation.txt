@@ -1,0 +1,49 @@
+Job 1 : 
+Objectif : Avoir un projet Spring Boot prêt à être importé dans votre IDE.
+
+Question : Qu'est-ce que Spring Initializr et comment peut-il faciliter la 
+création d'un nouveau projet Spring ?
+
+➔ Un framework Java côté serveur : le code tourne sur le serveur, le 
+navigateur ne reçoit que le résultat.
+➔ Auto-configuration : les « starters » configurent l’essentiel à notre place.
+➔ Serveur intégré (Tomcat) : l’application se lance seule, sur localhost:8080.
+➔ L’équivalent de Symfony ou Laravel, mais dans le monde Java.
+
+Job 2 :
+Objectif : Comprendre la structure de base d'un projet Spring Boot.
+
+Question : Pourquoi le fichier pom.xml est-il crucial dans un projet Maven ?
+➔ pom.xml : la carte d’identité Maven du projet
+Le cœur d’un projet Maven. Il sert à :
+➔ Déclarer les dépendances : Maven les 
+télécharge tout seul
+➔ Garantir des versions compatibles grâce 
+au parent Spring Boot
+➔ Configurer le build : version de Java, 
+plugins
+➔ Empaqueter l’appli en .jar exécutable
+Sans pom.xml, Maven ne sait rien du projet.
+
+Job 3 :
+Objectif : Avoir une application qui affiche "Hello World" à l'adresse 
+localhost:8080.
+
+Question : Qu'est-ce qu'un contrôleur dans le contexte de Spring MVC ?
+C'est un composant qui reçoit et traite les requêtes HTTP qui viennent du client, il fait le lien entre les requêtes l'utilisateur, la logique métier et les réponses à retourner.
+
+Job 4 :
+Objectif : Afficher un message personnalisé défini dans application.yml sur 
+votre route.
+
+Question : Comment Spring permet-il l'injection de propriétés depuis des 
+fichiers de configuration ?
+Grâce à @Value qui injecte la valeur dans le contrôleur.
+
+Job 5 :
+Objectif : Découvrir le rechargement automatique des modifications grâce à 
+DevTools. 
+
+Question : En quoi la dépendance DevTools est-elle bénéfique pour le 
+développement ?
+Redémarrage automatique à chaque compilation, seul le code est rechargé, les pages Thymeleaf changent tout de suite, désactivé automatiquement en production.
