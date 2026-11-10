@@ -1,0 +1,34 @@
+Job 1 :
+Objectif : Avoir des notes détaillées ou un schéma représentant le modèle 
+MVC.
+
+Question : Comment le modèle MVC aide-t-il à structurer une application 
+web ? Le modèle gère les données et la logique métier , la vue affiche les informations à l'utilisateur et le controleur reçoit les requêtes, traite les demandes et coordonne les échanges entre le modèle et la vue.
+
+Job 2 :
+Objectif : Voir le contenu de view.html dans le navigateur via une route 
+spécifique. 
+
+Question : Quelle est la différence entre Thymeleaf et les templates HTML 
+classiques ? Le contrôleur Spring prépare les données. Thymeleaf fusionne ces données avec le template. Le HTML final est renvoyé au navigateur
+
+Job 3 :
+Objectif : Voir une liste d'éléments dynamiques dans la vue.
+
+Question : Comment pouvez-vous passer des données d'un contrôleur à une 
+vue dans Spring ? Définir une méthode @GetMapping dans le contrôleur pour recevoir une requête, utiliser la méthode addAttribute pour ajouter des données au modèle, accéder aux données de la vue via Thymeleaf avec la syntaxe th:text=${nom} pour afficher les valeurs.
+
+Job 4 :
+Objectif : Avoir un formulaire fonctionnel qui affiche un message de 
+bienvenue lors de la soumission.
+
+Question : Comment Spring facilite-t-il la gestion des formulaires ?
+Spring Web MVC facilite la gestion des formulaires web en fournissant des taglibs pour créer des formulaires HTML et en facilitant le binding des données avec la partie serveur. Les gestionnaires d'événements sont également pris en compte, permettant une interaction dynamique avec les utilisateurs. Les formulaires peuvent être créés avec des balises Spring comme <form:input path="nom" /> et <form:errors path="titre"/>, et les données soumises sont liées automatiquement à un objet Java grâce à l'annotation @ModelAttribute. Cela permet une intégration fluide des formulaires avec le reste de l'application Spring, rendant la collecte et la validation des données utilisateur plus simple et élégante
+
+Job 5 :
+Objectif : Avoir un formulaire qui valide l'entrée et affiche des messages 
+d'erreur.
+
+Question : Comment Spring permet-il la validation des données du 
+formulaire ?  
+Grâce à la dépendance spring-boot-starter-validation ainsi que l'annotation @Valid qui déclenche la vérification des règles et BindingResult qui collecte les erreurs(juste après l'objet).
